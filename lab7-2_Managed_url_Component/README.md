@@ -36,7 +36,7 @@
 เเละ  LAB7-2: � Component Source: GitHub Repository ที่ยืนยันว่าใช้ managed component จาก GitHub URL
 ส่วนที่เหลือเช่น ค่าจาก sensor เเละ display มีลักษณธเหมือนเดิมทุกอย่าง
 
-
+```
 I (736) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader
 I (737) boot: compile time Aug 13 2025 03:19:51
 I (737) boot: Multicore bootloader
@@ -101,4 +101,4 @@ I (6389) SENSOR: ✅ Sensor status check from file: ./managed_components/lab7_co
 I (6389) SENSOR: 📈 All sensors operating normally
 I (6389) LAB7-2: � Component Source: GitHub Repository
 I (6389) LAB7-2: ==========================================
-
+```
