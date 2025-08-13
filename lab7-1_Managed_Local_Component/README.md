@@ -35,6 +35,7 @@ idf.py build คือการ Build project
 
 idf.py qemu moniter รัน QEMU (สำหรับการทดสอบ)
 ผลลัพท์ที่ได้คือ 
+```
 I (2387) LAB7-1: 🚀 Lab 7-1: Local Component Demo Started
 I (2387) SENSOR: 🔧 Sensor initialized from file: /project/components/Sensors/sensor.c, line: 12
 I (2387) SENSOR: 📡 Sensor module ready for operation
@@ -50,7 +51,7 @@ I (5397) SENSOR: 💧 Humidity: 96.9%
 I (5397) SENSOR: ✅ Sensor status check from file: /project/components/Sensors/sensor.c, line: 30
 I (5397) SENSOR: 📈 All sensors operating normally
 I (5397) LAB7-1: ----------------------------
-
+```
 ## โจทย์ท้าทาย
 
 ### 1. สร้าง  component ชื่อ `Display` โดย นำไฟล์ `display.c` และ `display.h` จากใบงานที่ 6 มาใช้ 
@@ -62,7 +63,7 @@ I (5397) LAB7-1: ----------------------------
 
 
 ### 2. นำโค้ดจาก main.c ในใบงานที่ 6 มาใช้ แล้ว build พร้อมทดสอบ
-
+```
 rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
 configsip: 0, SPIWP:0xee
 clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
@@ -137,3 +138,4 @@ I (8397) SENSOR: ✅ Sensor status check from file: /project/components/Sensors/
 I (8397) SENSOR: 📈 All sensors operating normally
 I (8397) LAB7-1: ----------------------------
 ---
+```
