@@ -7,8 +7,10 @@
 cd lab7-1_Managed_Local_Component เข้าไปในโฟด์์เดอร์ lab7-1_Managed_Local_Component
 ผลลัพท์ที่ได้คือ root@cf6391ee6c29:/project/lab7-1_Managed_Local_Component# 
 
+
 . $IDF_PATH/export.sh  export environment เพื่อให้สามารถเรียกใช้ idf tools ได้
 ผลลัพท์ที่ได้คือ
+```
 root@cf6391ee6c29:/project/lab7-1_Managed_Local_Component# . $IDF_PATH/export.sh
 Checking "python3" ...
 Python 3.12.3
@@ -26,7 +28,7 @@ Setting IDF_PATH to '/opt/esp/idf'.
 Done! You can now compile ESP-IDF projects.
 Go to the project directory and run:
 idf.py build 
-
+```
 idf.py set-target esp32 กำหนด target ESP32
 
 idf.py build คือการ Build project 
