@@ -1,0 +1,2 @@
+source /project/lab7-2_Managed_url_Component/build/bootloader/gdbinit/symbols
+source /project/lab7-2_Managed_url_Component/build/bootloader/gdbinit/connect

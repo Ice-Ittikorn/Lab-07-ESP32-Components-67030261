@@ -1,0 +1,75 @@
+Command: /opt/esp/python_env/idf6.0_py3.12_env/bin/python /opt/esp/idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /project/lab7-2_Managed_url_Component/build/lab7-2.elf /project/lab7-2_Managed_url_Component/build/bootloader/bootloader.elf -m '/opt/esp/python_env/idf6.0_py3.12_env/bin/python' '/opt/esp/idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (736) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (737) boot: compile time Aug 13 2025 03:19:51[0m
+[0;32mI (737) boot: Multicore bootloader[0m
+[0;32mI (824) boot: chip revision: v3.0[0m
+[0;32mI (826) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (826) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (827) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (840) boot: Enabling RNG early entropy source...[0m
+[0;32mI (857) boot: Partition Table:[0m
+[0;32mI (857) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (857) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (857) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (858) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (869) boot: End of partition table[0m
+[0;32mI (968) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=096d4h ( 38612) map[0m
+[0;32mI (1012) esp_image: segment 1: paddr=000196fc vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (1049) esp_image: segment 2: paddr=00019728 vaddr=3ffb0000 size=025e0h (  9696) load[0m
+[0;32mI (1087) esp_image: segment 3: paddr=0001bd10 vaddr=40080000 size=04308h ( 17160) load[0m
+[0;32mI (1129) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=0f08ch ( 61580) map[0m
+[0;32mI (1172) esp_image: segment 5: paddr=0002f0b4 vaddr=40084308 size=08cf8h ( 36088) load[0m
+[0;32mI (1287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1288) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1315) cpu_start: Multicore app[0m
+[0;32mI (2300) cpu_start: Pro cpu start user code[0m
+[0;32mI (2301) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (2301) app_init: Application information:[0m
+[0;32mI (2301) app_init: Project name:     lab7-2[0m
+[0;32mI (2302) app_init: App version:      1[0m
+[0;32mI (2302) app_init: Compile time:     Aug 13 2025 03:19:48[0m
+[0;32mI (2302) app_init: ELF file SHA256:  4566ce37c...[0m
+[0;32mI (2302) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (2302) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (2302) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (2302) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (2303) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (2304) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (2304) heap_init: At 3FFB2EA8 len 0002D158 (180 KiB): DRAM[0m
+[0;32mI (2304) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (2305) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (2305) heap_init: At 4008D000 len 00013000 (76 KiB): IRAM[0m
+[0;32mI (2349) spi_flash: detected chip: winbond[0m
+[0;32mI (2354) spi_flash: flash io: dio[0m
+[0;32mI (2369) main_task: Started on CPU0[0m
+[0;32mI (2379) main_task: Calling app_main()[0m
+[0;32mI (2379) LAB7-2: 🚀 Lab 7-2: Managed Component from GitHub URL Demo Started[0m
+[0;32mI (2379) LAB7-2: 📥 Using Sensors component from: https://github.com/APPLICATIONS-OF-MICROCONTROLLERS/Lab7_Components[0m
+[0;32mI (2379) SENSOR: 🔧 Sensor initialized from file: ./managed_components/lab7_components/Sensors/sensor.c, line: 12[0m
+[0;32mI (2379) SENSOR: 📡 Sensor module ready for operation[0m
+[0;32mI (2379) LAB7-2: 📋 Reading #1 from GitHub Component[0m
+[0;32mI (2379) SENSOR: 📊 Reading sensor data from file: ./managed_components/lab7_components/Sensors/sensor.c, line: 18[0m
+[0;32mI (2379) SENSOR: 🌡️  Temperature: 28.3°C[0m
+[0;32mI (2389) SENSOR: 💧 Humidity: 94.7%[0m
+[0;32mI (2389) SENSOR: ✅ Sensor status check from file: ./managed_components/lab7_components/Sensors/sensor.c, line: 30[0m
+[0;32mI (2389) SENSOR: 📈 All sensors operating normally[0m
+[0;32mI (2389) LAB7-2: � Component Source: GitHub Repository[0m
+[0;32mI (2389) LAB7-2: ==========================================[0m
+[0;32mI (6389) LAB7-2: 📋 Reading #2 from GitHub Component[0m
+[0;32mI (6389) SENSOR: 📊 Reading sensor data from file: ./managed_components/lab7_components/Sensors/sensor.c, line: 18[0m
+[0;32mI (6389) SENSOR: 🌡️  Temperature: 30.6°C[0m
+[0;32mI (6389) SENSOR: 💧 Humidity: 81.9%[0m
+[0;32mI (6389) SENSOR: ✅ Sensor status check from file: ./managed_components/lab7_components/Sensors/sensor.c, line: 30[0m
+[0;32mI (6389) SENSOR: 📈 All sensors operating normally[0m
+[0;32mI (6389) LAB7-2: � Component Source: GitHub Repository[0m
+[0;32mI (6389) LAB7-2: ==========================================[0m

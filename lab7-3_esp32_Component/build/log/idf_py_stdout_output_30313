@@ -1,0 +1,101 @@
+Command: /opt/esp/python_env/idf6.0_py3.12_env/bin/python /opt/esp/idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /project/lab7-3_esp32_Component/build/lab7-3.elf /project/lab7-3_esp32_Component/build/bootloader/bootloader.elf -m '/opt/esp/python_env/idf6.0_py3.12_env/bin/python' '/opt/esp/idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (727) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (728) boot: compile time Aug 13 2025 03:36:26[0m
+[0;32mI (728) boot: Multicore bootloader[0m
+[0;32mI (867) boot: chip revision: v3.0[0m
+[0;32mI (869) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (869) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (869) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (885) boot: Enabling RNG early entropy source...[0m
+[0;32mI (901) boot: Partition Table:[0m
+[0;32mI (902) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (902) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (902) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (902) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (914) boot: End of partition table[0m
+[0;32mI (1006) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a0b4h ( 41140) map[0m
+[0;32mI (1050) esp_image: segment 1: paddr=0001a0dc vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (1088) esp_image: segment 2: paddr=0001a108 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (1126) esp_image: segment 3: paddr=0001c710 vaddr=40080000 size=03908h ( 14600) load[0m
+[0;32mI (1167) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=10290h ( 66192) map[0m
+[0;32mI (1211) esp_image: segment 5: paddr=000302b8 vaddr=40083908 size=096f8h ( 38648) load[0m
+[0;32mI (1354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1378) cpu_start: Multicore app[0m
+[0;32mI (2429) cpu_start: Pro cpu start user code[0m
+[0;32mI (2430) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (2430) app_init: Application information:[0m
+[0;32mI (2430) app_init: Project name:     lab7-3[0m
+[0;32mI (2430) app_init: App version:      1[0m
+[0;32mI (2431) app_init: Compile time:     Aug 13 2025 03:36:22[0m
+[0;32mI (2431) app_init: ELF file SHA256:  102bbdf04...[0m
+[0;32mI (2431) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (2431) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (2431) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (2431) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (2432) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (2433) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (2433) heap_init: At 3FFB2EC8 len 0002D138 (180 KiB): DRAM[0m
+[0;32mI (2433) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (2433) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (2433) heap_init: At 4008D000 len 00013000 (76 KiB): IRAM[0m
+[0;32mI (2475) spi_flash: detected chip: winbond[0m
+[0;32mI (2484) spi_flash: flash io: dio[0m
+[0;32mI (2498) main_task: Started on CPU0[0m
+[0;32mI (2508) main_task: Calling app_main()[0m
+[0;32mI (2508) LAB7-3: � Lab 7-3: Custom Components Demo (sensor + display) Started[0m
+[0;32mI (2508) LAB7-3: 📦 Using components created with idf.py create-component[0m
+[0;32mI (2508) ENHANCED_SENSOR: 🔧 Enhanced Sensor Component initialized[0m
+[0;32mI (2508) ENHANCED_SENSOR: 📍 File: ./components/sensor/sensor.c, Line: 14[0m
+[0;32mI (2508) ENHANCED_SENSOR: ✅ GPIO LED configured on pin 2[0m
+[0;32mI (2508) DISPLAY: 🖥️  Display Component initialized[0m
+[0;32mI (2508) DISPLAY: 📍 File: ./components/display/display.c, Line: 11[0m
+[0;32mI (2508) DISPLAY: ✅ Virtual display ready for operation[0m
+[0;32mI (2508) LAB7-3: 📋 Reading #1[0m
+[0;32mI (2508) DISPLAY: 🧹 Display cleared[0m
+[0;32mI (2508) DISPLAY: [0m
+[0;32mI (2518) ENHANCED_SENSOR: 🌡️  Temperature: 34.00°C[0m
+[0;32mI (2518) ENHANCED_SENSOR: 💧 Humidity: 46.80%[0m
+[0;32mI (2518) LAB7-3: 🔥 Heat Index: 57.40[0m
+[0;32mI (2518) DISPLAY: ┌─────────────────────────────────┐[0m
+[0;32mI (2518) DISPLAY: │        SENSOR DATA DISPLAY      │[0m
+[0;32mI (2518) DISPLAY: ├─────────────────────────────────┤[0m
+[0;32mI (2518) DISPLAY: │ 🌡️  Temperature:  34.00°C      │[0m
+[0;32mI (2518) DISPLAY: │ 💧 Humidity:     46.80%       │[0m
+[0;32mI (2518) DISPLAY: │ 🔥 Heat Index:   57.40        │[0m
+[0;32mI (2518) DISPLAY: └─────────────────────────────────┘[0m
+[0;32mI (2518) DISPLAY: ┌─────────────────────────────────┐[0m
+[0;32mI (2528) DISPLAY: │         SYSTEM STATUS           │[0m
+[0;32mI (2528) DISPLAY: ├─────────────────────────────────┤[0m
+[0;32mI (2528) DISPLAY: │ Status: ✅ Comfortable         │[0m
+[0;32mI (2528) DISPLAY: └─────────────────────────────────┘[0m
+[0;32mI (2528) LAB7-3: ==========================================[0m
+[0;32mI (8528) LAB7-3: 📋 Reading #2[0m
+[0;32mI (8528) DISPLAY: 🧹 Display cleared[0m
+[0;32mI (8528) DISPLAY: [0m
+[0;32mI (8528) ENHANCED_SENSOR: 🌡️  Temperature: 35.80°C[0m
+[0;32mI (8528) ENHANCED_SENSOR: 💧 Humidity: 74.90%[0m
+[0;32mI (8528) LAB7-3: 🔥 Heat Index: 73.25[0m
+[0;32mI (8528) DISPLAY: ┌─────────────────────────────────┐[0m
+[0;32mI (8528) DISPLAY: │        SENSOR DATA DISPLAY      │[0m
+[0;32mI (8528) DISPLAY: ├─────────────────────────────────┤[0m
+[0;32mI (8528) DISPLAY: │ 🌡️  Temperature:  35.80°C      │[0m
+[0;32mI (8528) DISPLAY: │ 💧 Humidity:     74.90%       │[0m
+[0;32mI (8528) DISPLAY: │ 🔥 Heat Index:   73.25        │[0m
+[0;32mI (8528) DISPLAY: └─────────────────────────────────┘[0m
+[0;32mI (8528) DISPLAY: ┌─────────────────────────────────┐[0m
+[0;32mI (8528) DISPLAY: │         SYSTEM STATUS           │[0m
+[0;32mI (8528) DISPLAY: ├─────────────────────────────────┤[0m
+[0;32mI (8528) DISPLAY: │ Status: ✅ Comfortable         │[0m
+[0;32mI (8528) DISPLAY: └─────────────────────────────────┘[0m
+[0;32mI (8528) LAB7-3: ==========================================[0m
